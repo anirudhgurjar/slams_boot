@@ -121,11 +121,11 @@ export default {
   color: aliceblue;
 }
 .container-fluid {
-  background: url('../../public/img/background.jpg') !important;
+  /* background: url('../../public/img/background.jpg') !important;
   background-repeat: no-repeat;
   background-size: cover !important;   
   height: -webkit-fill-available;
-    overflow: hidden; /* don't show content that exceeds my height */
+    overflow: hidden; don't show content that exceeds my height */
 }
 
 </style>
