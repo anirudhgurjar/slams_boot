@@ -2,8 +2,10 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import SLanding from './pages/Slanding.vue';
 import Navbar from './pages/Header.vue'
+import Footer from './pages/FooterBar.vue';
 import Scategorygroup from './pages/SCategoryGroupList.vue';
 import Slisting from './pages/SListing.vue';
+import Slisting_desktop from './pages/Slisting_desktop.vue';
 
 Vue.use(Router);
 
@@ -18,7 +20,7 @@ export default new Router({
       {
         path: '/scategorygroup',
         name: 'scategorygroup',
-        components: { default: Scategorygroup, header:Navbar },
+        components: { default: Scategorygroup, header:Navbar,footer:Footer },
         props : {
           addressData:{},
           statedata:{},
@@ -27,7 +29,20 @@ export default new Router({
       },{
         path: '/slisting',
         name: 'slisting',
-        components: { default: Slisting, header:Navbar },
+        components: { default: Slisting, header:Navbar},
+        props : {
+          addressData:{},
+          categoryId:{},
+          categoryName:{},
+          cityName:{},
+          statedata:{},
+          searchresults:{},
+          parentCtID:{}
+        }
+      },{
+        path: '/slisting_desktop',
+        name: 'slisting_desktop',
+        components: { default: Slisting_desktop, header:Navbar },
         props : {
           addressData:{},
           categoryId:{},

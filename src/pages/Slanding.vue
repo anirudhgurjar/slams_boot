@@ -3,10 +3,11 @@
     <div class="page-header clear-filter">
       <div class="jumbotorn">
         <div class="text-center brand">
-          <h1 class="h1">Explore.Discover.Learn</h1>
+          <h1 class="h1-sm">Explore.Discover.Learn</h1>
           <h5>Slamsbox helps you to find great activities around you</h5>
           <form class="col-lg-12 d-flex justify-content-center">
             <div class="form-group form-inline">
+              <div class="input-group">
               <span class="btn btn-info">Near</span>
               <gmap-autocomplete         
                   ref="autocomplete"     
@@ -18,7 +19,8 @@
                 :to="{ name: 'scategorygroup', params: { addressData: this.autocompAddr } }"
                 class="btn btn-primary btn"
                 tag="button"
-              >Search</router-link>  
+              >Search</router-link> 
+              </div> 
             </div>
           </form>
           <div class="form-group d-flex justify-content-center">
@@ -121,11 +123,11 @@ export default {
   color: aliceblue;
 }
 .container-fluid {
-  /* background: url('../../public/img/background.jpg') !important;
+   background: url('../../public/img/background.jpg') !important;
   background-repeat: no-repeat;
   background-size: cover !important;   
   height: -webkit-fill-available;
-    overflow: hidden; don't show content that exceeds my height */
+    overflow: hidden; 
 }
 
 </style>
